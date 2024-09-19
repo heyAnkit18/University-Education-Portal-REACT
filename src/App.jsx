@@ -1,29 +1,35 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Navbar/Navbar'
-import Programs from './components/Programs/Programs'
-import Campus from './components/Campus/Campus'
-import Title from './components/Title/Title'
-import VideoPlayer from './components/VideoPlayer/VideoPlayer'
-import Contact from './components/Contact/Contact'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
-
-
+import React, { useState } from 'react';
+import Navbar from './Components/Navbar/Navbar'
+import Hero from './Components/Hero/Hero'
+import Programs from './Components/Programs/Programs'
+import Title from './Components/Title/Title'
+import About from './Components/About/About'
+import Campus from './Components/Campus/Campus'
+import Testimonials from './Components/Testimonials/Testimonials'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
+import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
 
 const App = () => {
+  const [playVideo, setPlayVideo] = useState(false);
+
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Programs/>
-      <About/>
-      <Campus/>
-      <Title/>
-      <VideoPlayer/>
-      <Contact/>
-      <Footer/>
-
+      <Navbar />
+      <Hero />
+      <div className="container">
+        <Title subTitle='What We Offer' title='What We Offer' />
+        <Programs />
+        <About setPlayVideo={setPlayVideo} />
+        <Title subTitle='Gallery' title='Campus Photos' />
+        <Campus />
+        <Title subTitle='TESTIMONIALS' title='What Students Says' />
+        <Testimonials />
+        <Title subTitle='Contact Us' title='Get in Touch' />
+        <Contact />
+        <Footer />
+      </div>
+      <VideoPlayer playVideo={playVideo} setPlayVideo={setPlayVideo} />
     </div>
   )
 }
