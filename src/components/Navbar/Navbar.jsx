@@ -1,4 +1,5 @@
 import React from 'react'
+import './Navbar.css'
 import dark_arrow from '../../assets/dark-arrow.png';
 
 const Hero = () => {
