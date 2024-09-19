@@ -10,7 +10,6 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 
-
 const App = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
@@ -30,9 +29,10 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-      {playVideo && <VideoPlayer playVideo={playVideo} setPlayVideo={setPlayVideo} />}
+      {playVideo && <VideoPlayer setPlayVideo={setPlayVideo} />}
     </div>
   );
 }
 
 export default App;
+
