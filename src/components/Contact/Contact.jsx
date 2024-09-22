@@ -6,6 +6,8 @@ import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 
 const Contact = () => {
+
+  //Web3 form Script
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -30,6 +32,8 @@ const Contact = () => {
       setResult(data.message);
     }
   };
+
+  
   return (
     <div className='contact'>
       <div className='contact-col'>
