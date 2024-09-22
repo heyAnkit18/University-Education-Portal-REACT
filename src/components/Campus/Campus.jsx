@@ -10,8 +10,9 @@ const Campus = () => {
   const [showDetails, setShowDetails] = useState(false);
 
   const handleButtonClick = () => {
-    setShowDetails(prevState => !prevState); // Toggle the state
+    setShowDetails(!showDetails); 
   };
+  
 
   return (
     <div className='campus'>
