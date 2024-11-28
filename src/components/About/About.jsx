@@ -16,8 +16,6 @@ const About = ({setPlayVideo}) => {
         <p>At Vedanta Engineering University, we are committed to fostering a culture of academic excellence, innovation, and inclusivity. Our rich history of producing world-class professionals is a testament to our dedication.</p>
         <p>We are dedicated to fostering a culture of academic excellence, innovation, and inclusivity. With a rich history of producing world-class professionals.</p>
         <p>We lead the way in groundbreaking research and technological advancements, constantly pushing the boundaries of knowledge. Our faculty and students collaborate to tackle the challenges of tomorrow.</p>
-        <p>our faculty and students work together to solve the challenges of tomorrow. We invite you to become part of a university that doesn't just prepare you for the future but empowers you to shape it.</p>
-        <p>Join us at [University Name]—where we don’t just prepare you for the future, but empower you to shape it.</p>
     </div>
     </div>
   )
